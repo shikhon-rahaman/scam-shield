@@ -79,7 +79,25 @@ The npm audit currently reports moderate-severity advisories in development-only
 
 GitHub Actions runs on pushes and pull requests targeting `main`. It installs the lockfile with `npm ci`, then runs the tests and production build.
 
----
+## Architecture
+
+Everything runs in the browser. There is no application server, database, or external API.
+
+```mermaid
+flowchart LR
+    A[User pastes message] --> B[Input guard<br/>5,000 character cap]
+    B --> S1
+    subgraph Engine[Analysis engine - src/engine]
+        direction TB
+        S1[10 signal detectors<br/>urgency, OTP, money, links...] --> K[Compound scoring<br/>and verdict thresholds]
+        K --> V[Verdict, signals,<br/>and next steps]
+    end
+    V --> D[React UI<br/>highlights rendered as text, never HTML]
+    D --> E[Explain simply mode]
+    D --> F[Warning card<br/>html-to-image PNG]
+    F -. message text only with user opt-in .-> G[Downloaded image]
+    X[No network calls<br/>No backend or API keys] -.- S1
+```
 
 ## Disclosures & Acknowledgments
 
