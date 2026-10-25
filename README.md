@@ -122,6 +122,12 @@ npm test
 
 The suite has 92 tests covering every signal, 24 fictional scam and legitimate message fixtures, XSS handling, the 5,000-character input cap, Content Security Policy presence, and share-card privacy.
 
+## Planning Documents
+
+Built with the Devpost Learn Skill Pack. See [scope.md](scope.md), [prd.md](prd.md), and [spec.md](spec.md).
+
+---
+
 ## Disclosures & Acknowledgments
 
 - **Built with the Devpost Learn Skill Pack** as part of the Build With AI learning path.
