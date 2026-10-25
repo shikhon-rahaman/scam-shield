@@ -1,5 +1,6 @@
 # Scam Shield
 
+**Live demo:** https://scam-shield-ashy.vercel.app/
 > A privacy-first, on-device web application that checks suspicious messages in seconds with zero data leaving your browser.
 
 Scam Shield helps everyday people, older family members, and beginners quickly verify suspicious SMS texts, WhatsApp forwards, courier updates, and job offers. It runs entirely on-device using a pure deterministic TypeScript rule engine, with no logins, no cloud AI calls, and no tracking.
