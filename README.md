@@ -112,6 +112,16 @@ prd.md          product requirements
 spec.md         technical specification
 ```
 
+## Testing
+
+Run the test suite with:
+
+```bash
+npm test
+```
+
+The suite has 92 tests covering every signal, 24 fictional scam and legitimate message fixtures, XSS handling, the 5,000-character input cap, Content Security Policy presence, and share-card privacy.
+
 ## Disclosures & Acknowledgments
 
 - **Built with the Devpost Learn Skill Pack** as part of the Build With AI learning path.
