@@ -99,6 +99,19 @@ flowchart LR
     X[No network calls<br/>No backend or API keys] -.- S1
 ```
 
+## Project Structure
+
+```text
+src/
+  engine/       detection engine: signals, scoring, explanations, fixtures, and tests
+  components/   Button, Card, Badge, Toggle, Tooltip, WarningCardModal, share-card privacy
+  pages/        component gallery (/design)
+  styles/       design tokens and global CSS
+scope.md        product scope
+prd.md          product requirements
+spec.md         technical specification
+```
+
 ## Disclosures & Acknowledgments
 
 - **Built with the Devpost Learn Skill Pack** as part of the Build With AI learning path.
