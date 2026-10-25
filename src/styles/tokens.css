@@ -1,0 +1,114 @@
+/* Design Tokens for Scam Shield */
+/* Mood: Calm, trustworthy, protective */
+
+:root {
+  /* Typography */
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Base Light Theme Colors */
+  --color-bg: #FAF8F4;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #F4F0E6;
+  --color-surface-hover: #ECE6D8;
+  --color-border: #E6DFD3;
+  --color-border-subtle: #EFEBE2;
+
+  --color-text-main: #16202A;
+  --color-text-muted: #4B5A69;
+  --color-text-dim: #7B8B9A;
+
+  /* Protective Primary Teal */
+  --color-primary: #0F5C5C;
+  --color-primary-hover: #0C4B4B;
+  --color-primary-active: #093A3A;
+  --color-primary-subtle: #E8F2F2;
+  --color-primary-text: #FFFFFF;
+
+  /* Verdict Colors (Always paired with an icon AND a text label) */
+  --color-verdict-scam: #C62F2F;
+  --color-verdict-scam-subtle: #FDE8E8;
+  --color-verdict-scam-border: #F8B4B4;
+  --color-verdict-scam-text: #8E1B1B;
+
+  --color-verdict-suspicious: #B7791F;
+  --color-verdict-suspicious-subtle: #FEF3C7;
+  --color-verdict-suspicious-border: #FCD34D;
+  --color-verdict-suspicious-text: #8D5408;
+
+  --color-verdict-fine: #2F7D4F;
+  --color-verdict-fine-subtle: #DEF7EC;
+  --color-verdict-fine-border: #BCF0DA;
+  --color-verdict-fine-text: #0E5E33;
+
+  /* Surface Radii: 16-24px for warm, friendly, protective feel */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-card-sm: 16px;
+  --radius-card: 20px;
+  --radius-card-lg: 24px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px rgba(22, 32, 42, 0.04), 0 1px 2px rgba(22, 32, 42, 0.02);
+  --shadow-card: 0 4px 14px rgba(22, 32, 42, 0.05), 0 1px 3px rgba(22, 32, 42, 0.03);
+  --shadow-elevated: 0 12px 28px -4px rgba(22, 32, 42, 0.08), 0 4px 8px -2px rgba(22, 32, 42, 0.03);
+
+  /* Spacing Grid Base: 8px */
+  --spacing-grid: 8px;
+
+  /* Transitions */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 250ms;
+  --ease-protective: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #11161B;
+    --color-surface: #18222B;
+    --color-surface-subtle: #1F2C37;
+    --color-surface-hover: #263645;
+    --color-border: #2C3C4C;
+    --color-border-subtle: #22303E;
+
+    --color-text-main: #F3F4F6;
+    --color-text-muted: #A3B1C2;
+    --color-text-dim: #6F7F91;
+
+    --color-primary: #178383;
+    --color-primary-hover: #1E9E9E;
+    --color-primary-active: #126868;
+    --color-primary-subtle: #123333;
+    --color-primary-text: #FFFFFF;
+
+    --color-verdict-scam: #E05252;
+    --color-verdict-scam-subtle: #381A1A;
+    --color-verdict-scam-border: #5E2626;
+    --color-verdict-scam-text: #FCA5A5;
+
+    --color-verdict-suspicious: #D68F2C;
+    --color-verdict-suspicious-subtle: #382711;
+    --color-verdict-suspicious-border: #664619;
+    --color-verdict-suspicious-text: #FDE68A;
+
+    --color-verdict-fine: #3FA36A;
+    --color-verdict-fine-subtle: #133320;
+    --color-verdict-fine-border: #1E5033;
+    --color-verdict-fine-text: #86EFAC;
+
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.35);
+    --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.45);
+    --shadow-elevated: 0 12px 30px rgba(0, 0, 0, 0.55);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
